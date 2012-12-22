@@ -17,15 +17,16 @@ For the latest version:
 {{{
 svn checkout http://factee.googlecode.com/svn/trunk/ factee
 }}}
-For the initial version:
+For the initial version,
 {{{
-wget http://code.google.com/p/factee/downloads/detail?name=factee-20121222.tar.gz ; tar xzf factee-20121222.tar.gz
+download factee-20121222.tar.gz 
+tar xzf factee-20121222.tar.gz
 }}}
 Then continue:
 {{{
 cd factee
-wget http://code.google.com/p/factee/downloads/detail?name=3rdparty.tar.gz
-wget http://code.google.com/p/factee/downloads/detail?name=data.tar.gz
+download 3rdparty.tar.gz to this folder
+download data.tar.gz to this folder
 tar xzf data.tar.gz
 tar xzf 3rdparty.tar.gz
 mvn compile
@@ -40,9 +41,9 @@ To get the system running, you need to get the source code first. The latest ver
 svn checkout http://factee.googlecode.com/svn/trunk/ factee
 }}}
 
-If you prefer the initial version (which is most similar to the paper), you could just check out the first version from SVN or do
+If you prefer the initial version (which is most similar to the paper), you could just check out the first version from SVN or
 {{{
-wget http://code.google.com/p/factee/downloads/detail?name=factee-20121222.tar.gz
+download factee-20121222.tar.gz
 tar xzf factee-20121222.tar.gz
 }}}
 
@@ -51,9 +52,9 @@ Then change to the project folder
 cd factee
 }}}
 
-Now you probably want to have all libraries which are needed for compilation. Get them and unpack them:
+Now you probably want to have all libraries which are needed for compilation. Get them into the folder factee and unpack them:
 {{{
-wget http://code.google.com/p/factee/downloads/detail?name=3rdparty.tar.gz
+download 3rdparty.tar.gz from the downloads of this project.
 tar xzf 3rdparty.tar.gz
 }}}
 
@@ -61,16 +62,15 @@ This makes a folder 3rdparty.
 
 To get started easily, get the data in a format which is prepared for this project and unpack it:
 {{{
-wget http://code.google.com/p/factee/downloads/detail?name=data.tar.gz
+download data.tar.gz
 tar xzf data.tar.gz
 }}}
 
 You can remove the tarballs now if you wish:
 {{{
 rm data.tar.gz 3rdparty.tar.gz
-rm ../factee-20121222.tar.gz
+rm factee-20121222.tar.gz
 }}}
-The last step is not needed if you checked out from SVN.
 
 Now compile and build a jar file:
 {{{
