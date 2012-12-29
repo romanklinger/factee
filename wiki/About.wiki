@@ -83,3 +83,7 @@ Similarly, you may want to adapt the ini file to your environment, but it should
 {{{
 bin/run.sh init/sample.ini
 }}}
+
+= Please note =
+This implementation is based on an old version of Scala and an old version of FACTORIE. This leads to highlighting of syntax errors in editors with the latest versions of Scala, where no errors are actually.
+See http://stackoverflow.com/questions/7753588/scala-too-many-arguments-error-in-intellij-idea-11-using-scala-2-7-7 for additional information on that issue.
